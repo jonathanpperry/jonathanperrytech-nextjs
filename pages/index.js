@@ -40,8 +40,8 @@ function BlogListItem({ slug, title, date, content }) {
   return (
     <div className="border border-blue-100 shadow hover:shadow-md hover:border-gray-200 rounded-md p-4 transition duration-200 ease-in">
       <div>
-        <Link href={`/blog/${slug}`}>
-          <a className="text-lg font-bold">{title}</a>
+        <Link className="text-lg font-bold" href={`/blog/${slug}`}>
+          {title}
         </Link>
       </div>
       <div className="text-gray-600 text-xs">

@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import Link from "next/link";
-import { config, library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config, library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 /* Tell Font Awesome to skip adding the CSS automatically since it's being imported above */
-config.autoAddCss = false 
+config.autoAddCss = false;
 
-library.add(fab)
+library.add(fab);
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,14 +16,10 @@ function MyApp({ Component, pageProps }) {
         <nav className="my-4">
           <ul className="flex flex-row justify-center space-x-4">
             <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
+              <Link href="/about">About</Link>
             </li>
           </ul>
         </nav>
